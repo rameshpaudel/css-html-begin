@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>FAQ</title>
+    <style>
+        .collapsible{
+            margin: 0;
+            padding: 0;
+        }
+
+        .collapsed h3{
+            background: #2f2f2f;
+            color: white;
+            padding: 15px;
+        }
+        .collapsed p{
+            display:none;
+        }
+
+        .collapsed.show p{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <header>
+    <ul>
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./about.html">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact Us</a></li>
+        <li><a href="./faq.html" class="active">FAQ</a></li>
+    </ul>
+    </header>
+        <div class="container">
+            <ul class="collapsible">
+                <li>
+                    <div class="collapsed">
+                        <h3>What to do?</h3>
+                        <p>Do something right now</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="collapsed">
+                        <h3>How we do?</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea, voluptatem.</p>
+                    </div>
+                </li>
+
+            </ul>
+        </div>
+    <script src="/js/main.js"></script>
+    <script>
+        var collapsible = document.querySelectorAll('.collapsed h3');
+        for(var i = 0; i < collapsible.length; i++){
+            collapsible[i].addEventListener('click', function(event){
+                event.target.parentNode.classList.toggle('show')
+                
+            })
+        }
+    </script>
+</body>
+</html>
