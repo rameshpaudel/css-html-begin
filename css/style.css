@@ -1,0 +1,31 @@
+  /* Header stylesheet 
+       We change the background color */
+       header {
+        background: #2f2f2f;
+    }
+    /* Removing default style from the browser */
+    header ul{
+        margin:0;
+        padding:0;
+    }
+
+    /* List is displayed as inline */
+    header ul li{
+        display:inline-block;
+        background: #2f2f2f;
+
+    }
+    /* Adding padding to the anchor tag 
+    And removing the default underline stylesheet */
+    header ul li a{
+        padding: 40px;
+        color: brown;
+        text-decoration: none;
+        display: block;
+        transition: all 0.4s ease-in-out;
+    }
+    /* Adding stylesheet for hover itemsgit status  */
+    header ul li a:hover{
+        color: black;
+        background: white;
+    }
