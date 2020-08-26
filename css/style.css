@@ -12,7 +12,7 @@
     /* List is displayed as inline */
     header ul li{
         display:inline-block;
-        background: #2f2f2f;
+        background: #FFCDB2;
 
     }
     /* Adding padding to the anchor tag 
@@ -38,4 +38,8 @@
     .active {
      background-color: white;
      color: black;
+    }
+
+    .container h1, .container p  {
+       font-size: ;
     }
